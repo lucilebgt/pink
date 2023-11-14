@@ -1,0 +1,23 @@
+@use '../var';
+
+.intro {
+    display: flex;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction: row;
+
+    &__title{
+        font-family: var.$titleFont;
+        font-size: 3rem;
+        padding:1rem;
+        margin-top:12rem;
+    }
+    &__desc{
+        font-family: var.$textFont;
+        font-size: 1.3rem;
+        padding:1rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+}

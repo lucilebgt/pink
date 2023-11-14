@@ -1,0 +1,36 @@
+@use './var';
+
+
+//button
+@mixin hoverBtn {
+    &:hover {
+        transition: background-color;
+        transition-duration: 0.3s ease;
+        background-color: #fff;
+        border:0.3rem solid var.$baseColor;
+        color: var.$texColor;
+    }
+}
+
+@mixin btn {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+    border: 0.3rem solid var.$actionColor;
+}
+
+//li
+@mixin shadow {
+    &:hover{
+    box-shadow: rgba(246, 49, 181, 0.47) 0px 13px 27px -5px, rgba(0, 0, 0, 0.57) 0px 8px 16px -8px;
+}
+}
+
+@mixin li {
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.8rem;
+    padding: 1rem;
+    border: 0.3rem solid var.$baseColor;
+}

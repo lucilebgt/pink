@@ -1,0 +1,31 @@
+@use './var';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    background-color: var.$baseColor;
+    color: var.$texColor;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    margin: 1rem auto;
+    display: block;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    font-size: 2.3em;
+    margin: 1rem 0;
+    font-family: var.$titleFont;
+}

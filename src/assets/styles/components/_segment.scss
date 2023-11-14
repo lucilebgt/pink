@@ -1,0 +1,54 @@
+@use '../var';
+@use '../mixin';
+
+
+
+.segment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    &__title {
+        font-family: var.$titleFont;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    &__desc {
+        font-size: 1.2rem;
+        padding: 1.4rem;
+        text-align: justify;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: calc(30%);
+        background-color: #fff;
+        align-content: space-between;
+        flex-direction: row;
+        padding: 1rem;
+        align-items: center;
+        
+
+        &__li {
+            @include mixin.li;
+            @include mixin.shadow;
+            
+        }
+    }
+}
+.li2{
+    @include mixin.li;
+    @include mixin.shadow;
+    justify-items: center;
+    text-align: center;
+    width: 50rem;
+    margin: 0.8rem 4rem 0.5rem 2rem;
+    padding: 1.2rem;
+}
